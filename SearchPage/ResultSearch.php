@@ -260,7 +260,7 @@ include_once "../Connection/db.php";
                                     <?php $name = $row["research_NameThai"]; ?>
                                     <tr>
                                         <td  style="text-align:justify:text-justify:inter-word"><?php echo $number ?></td>
-                                        <td  style="text-align:justify:text-justify:inter-word">
+                                        <td  style="text-align:justify;text-justify:inter-word">
                                         <?php
                                         echo "<a href=\"../ProjectPage/ProjectDetail.php?id=" . $row["research_No"] . "\">$name</a>";
                                         ?>
