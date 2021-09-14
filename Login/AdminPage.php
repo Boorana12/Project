@@ -82,32 +82,9 @@
 </head>
 
 <body>
-    <!-- แถบ Navigation Bar ส่วนหัว -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <img src="../img/itcmtc.png" width="30" height="30">
-        <a class="navbar-brand" href="#">&nbsp; CMTC RESEARCH</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <!-- ทำลิงก์ไปยังหน้าเว็บต่างๆ -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="../HomePage/Home.php">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="../SearchPage/Search.php">Search</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="../ProjectPage/Project.php">Project</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="../ContactPage/Contact.php">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<?php
+require("../layout/navbar.php");
+?>
     <div style="display:flex;justify-content:center;align-items:center;">
     <!-- แบบฟอร์มที่ส่งไปยังหน้า AdminPageProcess.php ในโฟลเดอร์ process -->
     <form method="POST" action="./Process/AdminPageProcess.php" class="login-form">

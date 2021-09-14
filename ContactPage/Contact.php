@@ -71,7 +71,7 @@ require("../layout/navbar.php");
                     <img src="../img/logophone.jpg" width="25" height="25">
                     <font size="4">&nbsp;โทร. 053-217708</font><br>
                     <img src="../img/logofacebook.png" width="25" height="25">
-                    <font size="4">&nbsp;FaceBook :&nbsp; </font> <a
+                    <font size="4">&nbsp;Facebook :&nbsp; </font> <a
                         href="https://www.facebook.com/itcmtc">https://www.facebook.com/itcmtc</a><br>
                     <img src="../img/logoline.png" width="25" height="25">
                     <font size="4">&nbsp;Line :</font><br>
