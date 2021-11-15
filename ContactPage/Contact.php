@@ -22,7 +22,6 @@ include_once "../Connection/db.php";
     <style>
     body {
         font-family: 'Sarabun', sans-serif;
-
     }
 
     #gridLeft {
@@ -47,6 +46,13 @@ include_once "../Connection/db.php";
         border-color: #FAEBD7;
         border-style: solid;
     }
+
+    div.card {
+        border-radius: 20px;
+        border-color: black;
+        border-width: 5px;
+
+    }
     </style>
 </head>
 
@@ -54,38 +60,35 @@ include_once "../Connection/db.php";
     <?php
 require("../layout/navbar.php");
 ?>
-    <div class="container-fluid">
-        <div class="row">
-            <!--------------- ส่วนเนื้อหา -------------->
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-12 px-md-5">
-                <p><br></p>
-                <div class="justify-content-between" style="background-color:#FFDAB9;">
+    <div class="container">
+        <!--------------- ส่วนเนื้อหา -------------->
+        <div class="container" style="padding-top: 3%;">
+            <div class="card">
+                <div class="justify-content-between">
                     <font size="5">&nbsp;ตำแหน่งที่ตั้ง</font>
                 </div>
-
-                <p class="contact" style="background:#FFFFFF !important">
-                    <img src="../img/logohouse.jpg" width="25" height="25">
+                <p class="" style="background:#FFFFFF !important ">
+                    <img src="../img/home.png" width="4%" height="4%">
                     <font size="4">&nbsp;สาขาวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเชียงใหม่ </font><br>
-                    <img src="../img/logomap.png" width="25" height="25">
+                    <img src="../img/location-pin.png" width="4%" height="4%">
                     <font size="4">&nbsp;เลขที่ 9 ถ.เวียงแก้ว ต.ศรีภูมิ อ.เมือง จ.เชียงใหม่ 50300</font><br>
-                    <img src="../img/logophone.jpg" width="25" height="25">
+                    <img src="../img/telephone-call.png" width="4%" height="4%">
                     <font size="4">&nbsp;โทร. 053-217708</font><br>
-                    <img src="../img/logofacebook.png" width="25" height="25">
+                    <img src="../img/facebook.png" width="4%" height="4%">
                     <font size="4">&nbsp;Facebook :&nbsp; </font> <a
                         href="https://www.facebook.com/itcmtc">https://www.facebook.com/itcmtc</a><br>
-                    <img src="../img/logoline.png" width="25" height="25">
+                    <img src="../img/line.png" width="4%" height="4%">
                     <font size="4">&nbsp;Line :</font><br>
                 </p>
-                <br>
-                <div style="display:flex;justify-content:center;align-items:center; ">
-                    <iframe width="100%" height="500" frameborder="0" style="border:0;"
-                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ3wrYcZo62jARFiQFxX9lH-Q&key=AIzaSyAh1K7tMB3zP1wn8kGXBVpAxJPC4VoTr_4"
-                        allowfullscreen></iframe>
-                </div>
-            </main>
+            </div>
+            <br>
+            <div style="display:flex;justify-content:center;align-items:center; ">
+                <iframe width="100%" height="500" frameborder="0" style="border:0;"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ3wrYcZo62jARFiQFxX9lH-Q&key=AIzaSyAh1K7tMB3zP1wn8kGXBVpAxJPC4VoTr_4"
+                    allowfullscreen></iframe>
+            </div>
         </div>
     </div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
