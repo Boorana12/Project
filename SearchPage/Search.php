@@ -11,6 +11,7 @@ include_once "../Connection/db.php";
     <?php
 require("../layout/navbar.php");
 ?>
+
     <div class="container-fluid">
         <div class="row">
             <!--------------------------------- body --------------------------------->

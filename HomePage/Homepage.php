@@ -36,7 +36,6 @@ require("../layout/navbar.php");
             <span class="sr-only">Next</span>
         </a>
     </div>
-
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
