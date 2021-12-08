@@ -13,6 +13,7 @@
     <link rel="icon" href="../img/project.png">
     <style>
     <?php include '../dist/css/navbar.css';
+
     ?>
     </style>
 </head>
@@ -53,10 +54,10 @@
             <!-- จบการทำงาน -->
         </ul>
         <!-- ตรวจสอบว่ามี session ที่ชื่อว่า username รึเปล่า ถ้าไม่มีให้แสดงคำสั่งลิงก์ไปยังหน้า login -->
-        <?php if(!isset($_SESSION["username"])) { ?>
+        <!--<?php if(!isset($_SESSION["username"])) { ?>
         <span class="navbar-text">
             <a href="../Login/LoginPage.php">Login</a>
-        </span>
+        </span>-->
         <!-- ถ้าหากว่ามีให้ทำงานตามคำสั่งต่อไปนี้ -->
         <?php } else { ?>
         <span class="navbar-text">

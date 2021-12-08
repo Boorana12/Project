@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <?php
-require("../layout/navbar.php");
+require("../layout/navbar2.php");
 ?>
 
 <body>

@@ -39,7 +39,7 @@
     </style>
 </head>
  <?php
-require("../layout/navbar.php");
+require("../layout/navbar2.php");
 ?>
 <body>
    
