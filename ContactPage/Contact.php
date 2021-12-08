@@ -9,7 +9,11 @@ include_once "../Connection/db.php";
 <?php
 require("../layout/navbar.php");
 ?>
+<style>
+<?php include '../dist/css/contact.css';
 
+?>
+</style>
 <body>
     <div class="container">
         <!--------------- ส่วนเนื้อหา -------------->
