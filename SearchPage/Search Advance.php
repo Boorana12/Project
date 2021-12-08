@@ -6,50 +6,12 @@ include_once "../Connection/db.php";
 
 <!doctype html>
 <html lang="en">
-
-<head>
-    <title>IT CMTC RESEARCH</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
-    <style>
-    body {
-        font-family: 'Sarabun', sans-serif;
-
-
-    }
-
-    #gridLeft {
-        margin-left: 50px;
-        padding-top: 20px;
-    }
-
-    #gridRight {
-        margin-left: 50px;
-        padding-top: 20px;
-    }
-
-    #gridLeftTopic {
-        margin-left: 50px;
-    }
-
-    #gridRightDetail {
-        margin-left: 50px;
-    }
-    </style>
-</head>
-
-<body>
-    <?php
+    
+<?php
 require("../layout/navbar.php");
 ?>
+
+<body>
     <div class="container-fluid">
         <div class="row">
             <!--------------------------------- body --------------------------------->

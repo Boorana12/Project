@@ -38,15 +38,15 @@
 
     </style>
 </head>
-
-<body>
-    <?php
+ <?php
 require("../layout/navbar.php");
 ?>
+<body>
+   
 
     <section id="registor" class="pt-4">
         <div class="container">
-        <img src="../img/logocmtc.jpg" width="90" height="90" class="rounded mx-auto d-block"><br>
+        <img src="../img/task.png" width="90" height="90" class="rounded mx-auto d-block"><br>
                 <div class="row">
                     <div class="col-3" ></div>
                         <div class="col-6" >
