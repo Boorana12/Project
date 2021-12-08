@@ -6,11 +6,12 @@ include_once "../Connection/db.php";
 
 <!doctype html>
 <html lang="en">
-
-<body>
-    <?php
+<?php
 require("../layout/navbar.php");
 ?>
+
+<body>
+
 
     <div class="container-fluid">
         <div class="row">

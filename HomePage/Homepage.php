@@ -8,7 +8,11 @@ include_once "../Connection/db.php";
 <?php
 require("../layout/navbar.php");
 ?>
+<style>
+    <?php include '../dist/css/card.css';
 
+    ?>
+    </style>
 <body>
     <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -17,13 +21,13 @@ require("../layout/navbar.php");
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" style="background-image: url('https://i.imgur.com/NnzxG4S.jpg')">
+            <div class="carousel-item active" style="background-image: url('../img/itcmtc/1581923390_4662-org.jpg')">
 
             </div>
-            <div class="carousel-item " style="background-image: url('https://i.imgur.com/w439mEw.jpg')">
+            <div class="carousel-item " style="background-image: url('../img/itcmtc/1581923390_9169-org.jpg')">
 
             </div>
-            <div class="carousel-item " style="background-image: url('https://i.imgur.com/cpIrOo1.jpg')">
+            <div class="carousel-item " style="background-image: url('../img/itcmtc/1581923426_7629-org.jpg')">
 
             </div>
         </div>

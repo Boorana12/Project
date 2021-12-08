@@ -6,11 +6,11 @@ include_once "../Connection/db.php";
 
 <!doctype html>
 <html lang="en">
-
-<body>
-    <?php
+<?php
 require("../layout/navbar.php");
 ?>
+
+<body>
     <div class="container">
         <!--------------- ส่วนเนื้อหา -------------->
         <div class="container" style="padding-top: 3%;">
