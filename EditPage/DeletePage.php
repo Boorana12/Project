@@ -19,12 +19,13 @@ if (!isset($_SESSION["admin"])) {
 
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <style>
-    body {
-        font-family: 'Sarabun', sans-serif;
-    }
+body {
+    font-family: 'Sarabun', sans-serif;
+}
 </style>
 <?php
 require("../layout/navbar.php");
@@ -51,9 +52,11 @@ require("../layout/navbar.php");
                         <div class="form-group">
                             <label for="research_No">หมายเลขที่ต้องการลบ</label>
                             <label style="color:red; ">&nbsp;*</label>
-                            <input id="research_No" name="research_No" placeholder="" type="number" class="form-control" required="required">
+                            <input id="research_No" name="research_No" placeholder="" type="number" class="form-control"
+                                required="required">
                             <small id="fileHelpId" class="form-text text-muted">กำหนดหมายเลขไอดีแบบเฉพาะทาง</small>
-                            <small id="fileHelpId" class="form-text text-muted">ไม่แนะนำให้ลบด้วยวิธีนี้หากไม่เจาะจงข้อมูลมาล่วงหน้า</small>
+                            <small id="fileHelpId"
+                                class="form-text text-muted">ไม่แนะนำให้ลบด้วยวิธีนี้หากไม่เจาะจงข้อมูลมาล่วงหน้า</small>
                         </div>
 
                         <div class="form-group">
@@ -68,31 +71,34 @@ require("../layout/navbar.php");
 
     <!-- สร้างคำสั่งตรวจสอบค่า -->
     <?php if (isset($_GET['m'])) : ?>
-        <div class="flash-data" data-flashdata="<?= $_GET['m']; ?>"></div>
+    <div class="flash-data" data-flashdata="<?= $_GET['m']; ?>"></div>
     <?php endif; ?>
 
     <script src="../sweetalert/jquery-3.5.1.min.js"></script>
     <script src="../sweetalert/sweetalert2.all.min.js"></script>
 
     <script>
-        // ถ้าหากว่ามีค่าให้แสดง sweeetalert เพิ่มข้อมูลไม่สำเร็จ
-        const flashdata = $('.flash-data').data('flashdata')
-        if (flashdata) {
-            Swal.fire({
-                type: 'success',
-                title: 'Something Wrong',
-                text: 'ลบข้อมูลไม่สำเร็จ!'
-            })
-        }
+    // ถ้าหากว่ามีค่าให้แสดง sweeetalert เพิ่มข้อมูลไม่สำเร็จ
+    const flashdata = $('.flash-data').data('flashdata')
+    if (flashdata) {
+        Swal.fire({
+            type: 'success',
+            title: 'Something Wrong',
+            text: 'ลบข้อมูลไม่สำเร็จ!'
+        })
+    }
     </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 </body>
 

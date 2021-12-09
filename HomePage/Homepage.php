@@ -87,7 +87,9 @@ require("../layout/navbar.php");
         </div>
     </section>
     <!---------------------------------------------CARD------------------------------------------->
-
+    <?php
+    require("../layout/footer.php")
+    ?>
 
 
     <!-- Optional JavaScript -->

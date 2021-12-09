@@ -15,8 +15,6 @@ require("../layout/navbar.php");
 ?>
 
 <body>
-
-
     <section id="add-researchs" class="pt-4">
         <div class="container">
             <div class="row">

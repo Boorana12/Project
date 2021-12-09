@@ -16,69 +16,79 @@ require("../layout/navbar.php");
 
 <body>
     <div class="container-fluid">
-        <div class="">
-            <!--------------- ส่วนเนื้อหา -------------->
-            <div class="col-md-9 col-lg-9 col-sm-12">
-                <section id="products" class="pt-4">
-                    <div class="container">
-                        <div>
-                            <h3 id="gridRight">รายชื่อโครงการทั้งหมด</h3>
-                        </div><br>
-                        <a id="gridLeftTopic" href="./AddPage.php" class="btn btn-primary">เพิ่มข้อมูล</a>
-                        <br>
-                        <br>
-                        <div class="table-responsive-sm">
-                            <table id="example" class="table table-striped table-bordered" style="width:100%">
-                                <!-- หัวตาราง  -->
-                                <thead>
-                                    <tr style="background-color:#DCDCDC " align="center">
-                                        <td width="4%">หมายเลข</td>
-                                        <td width="20%">ชื่อโครงการภาษาไทย</td>
-                                        <td width="20%">ชื่อโครงการภาษาอังกฤษ</td>
-                                        <td width="10%">ประเภท</td>
-                                        <td width="19%">ชื่อหัวหน้าโครงการ</td>
-                                        <td width="10%">ปีการศึกษา</td>
-                                        <td width="10%">ระดับชั้น</td>
-                                        <td width="9%">แก้ไข</td>
-                                        <td width="9%">ลบ</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <div>
-                                        <!-- ดึงข้อมูลทั้งหมดในตารางแล้วทำการเชื่อมต่อ -->
-                                        <?php
-                                        $readResearch = "SELECT * FROM researchs";
-                                        $readResearchResult = mysqli_query($conn, $readResearch);
-                                        ?>
-                                        <?php if (mysqli_num_rows($readResearchResult) > 0) { ?>
-                                            <!-- ทำซ้ำข้อมูลทั้งหมดให้แสดงออกมาจนกว่าจะครบ -->
-                                            <?php while ($row = mysqli_fetch_assoc($readResearchResult)) { ?>
-                                                <tr>
-                                                    <td style="text-align:justify:text-justify:inter-word"><?php echo $row["research_No"] ?></td>
-                                                    <td style="text-align:justify:text-justify:inter-word"><?php echo $row["research_NameThai"] ?></td>
-                                                    <td style="text-align:justify:text-justify:inter-word"><?php echo $row["research_NameEnglish"] ?></td>
-                                                    <td style="text-align:justify:text-justify:inter-word"><?php echo $row["research_Type"] ?></td>
-                                                    <td style="text-align:justify:text-justify:inter-word"><?php echo $row["research_ProjectLeaderName"] ?></td>
-                                                    <td style="text-align:justify:text-justify:inter-word"><?php echo $row["research_YearCompletion"] ?></td>
-                                                    <td style="text-align:justify:text-justify:inter-word"><?php echo $row["research_StudentClass"] ?></td>
-                                                    <?php
-                                                    echo "<td><a class=\"btn btn-primary btn-block\" href=\"./UpdatePage.php?id=" . $row["research_No"] . "\" role=\"button\">แก้ไข</a></td>";
-                                                    echo "<td><div class=\"btn btn-danger btn-block\"><a class=\"btn-del\" href=\"./Process/DeleteResearchQuick.php?id=" . $row["research_No"] . "\" role=\"button\">ลบ</a></div></td>";
-                                                    ?>
-                                                </tr>
-                                            <?php } ?>
-                                        <?php } else { ?>
-                                        <?php } ?>
-                                    </div>
-
-
-                                </tbody>
-                            </table>
-                        </div>
+        <!--------------- ส่วนเนื้อหา -------------->
+        <section id="products" class="pt-4">
+            <div class="container">
+                <div class="row mb-2">
+                    <div class="col-10">
+                        <h3>รายชื่อโครงการทั้งหมด</h3>
                     </div>
-                </section>
+                    <div class="col d-flex flex-row-reverse">
+                        <a href="./AddPage.php" class="btn btn-primary">เพิ่มข้อมูล</a>
+                    </div>
+                </div>
+
+                <!--<div>
+                    <h3 id="gridRight">รายชื่อโครงการทั้งหมด</h3>
+                </div>
+                <a id="gridLeftTopic" href="./AddPage.php" class="btn btn-primary">เพิ่มข้อมูล</a>
+                <br>
+                <br>-->
+                <div class="table-responsive-sm">
+                    <table id="example" class="table table-striped table-bordered" style="width:100%">
+                        <!-- หัวตาราง  -->
+                        <thead>
+                            <tr style="background-color:#DCDCDC " align="center">
+                                <td width="4%">หมายเลข</td>
+                                <td width="20%">ชื่อโครงการภาษาไทย</td>
+                                <td width="20%">ชื่อโครงการภาษาอังกฤษ</td>
+                                <td width="10%">ประเภท</td>
+                                <td width="19%">ชื่อหัวหน้าโครงการ</td>
+                                <td width="10%">ปีการศึกษา</td>
+                                <td width="10%">ระดับชั้น</td>
+                                <td width="9%">แก้ไข</td>
+                                <td width="9%">ลบ</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <div>
+                                <!-- ดึงข้อมูลทั้งหมดในตารางแล้วทำการเชื่อมต่อ -->
+                                <?php
+                                $readResearch = "SELECT * FROM researchs";
+                                $readResearchResult = mysqli_query($conn, $readResearch);
+                                ?>
+                                <?php if (mysqli_num_rows($readResearchResult) > 0) { ?>
+                                    <!-- ทำซ้ำข้อมูลทั้งหมดให้แสดงออกมาจนกว่าจะครบ -->
+                                    <?php while ($row = mysqli_fetch_assoc($readResearchResult)) { ?>
+                                        <tr>
+                                            <td style="text-align:justify;text-justify:inter-word">
+                                                <?php echo $row["research_No"] ?></td>
+                                            <td style="text-align:justify;text-justify:inter-word">
+                                                <?php echo $row["research_NameThai"] ?></td>
+                                            <td style="text-align:justify;text-justify:inter-word">
+                                                <?php echo $row["research_NameEnglish"] ?></td>
+                                            <td style="text-align:justify;text-justify:inter-word">
+                                                <?php echo $row["research_Type"] ?></td>
+                                            <td style="text-align:justify;text-justify:inter-word">
+                                                <?php echo $row["research_ProjectLeaderName"] ?></td>
+                                            <td style="text-align:justify;text-justify:inter-word">
+                                                <?php echo $row["research_YearCompletion"] ?></td>
+                                            <td style="text-align:justify;text-justify:inter-word">
+                                                <?php echo $row["research_StudentClass"] ?></td>
+                                            <?php
+                                            echo "<td><a class=\"btn btn-primary btn-block\" href=\"./UpdatePage.php?id=" . $row["research_No"] . "\" role=\"button\">แก้ไข</a></td>";
+                                            echo "<td><div class=\"btn btn-danger btn-block\"><a class=\"btn-del\" href=\"./Process/DeleteResearchQuick.php?id=" . $row["research_No"] . "\" role=\"button\">ลบ</a></div></td>";
+                                            ?>
+                                        </tr>
+                                    <?php } ?>
+                                <?php } else { ?>
+                                <?php } ?>
+                            </div>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
 
     <!-- สร้างคำสั่งตรวจสอบค่า -->
@@ -158,9 +168,12 @@ require("../layout/navbar.php");
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
     <script>

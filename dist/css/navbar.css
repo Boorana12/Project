@@ -1,5 +1,5 @@
 body {
-    font-family: 'Sarabun', sans-serif;
+    font-family: "Prompt", sans-serif;
     background-color: whitesmoke;
 }
 
@@ -22,14 +22,14 @@ body {
     color: #000000;
     outline: none;
     cursor: pointer;
-    transition: .5s;
+    transition: 0.5s;
     font-size: 20px;
     border-radius: 20px;
 }
 
-.btn-del{
+.btn-del {
     color: white;
-    }
+}
 
 .txtb span::before {
     content: attr(data-placeholder);
@@ -39,7 +39,7 @@ body {
     color: #adadad;
     transform: translateY(-50%);
     z-index: -1;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .txtb input {
@@ -51,7 +51,6 @@ body {
     background: none;
     padding: 0 5px;
     height: 40px;
-
 }
 
 .txtb {
@@ -68,7 +67,7 @@ body {
 
 .login-form {
     width: 360px;
-    background: #FFFFFF;
+    background: #ffffff;
     height: 680px;
     padding: 30px 40px;
     border-radius: 10px;
@@ -81,10 +80,11 @@ body {
     font-size: 16px;
 }
 
-#gridLeft, #gridRight{
+#gridLeft,
+#gridRight {
     margin-left: 50px;
     padding-top: 20px;
-    }
+}
 
 #gridLeftTopic {
     margin-left: 50px;
@@ -172,10 +172,9 @@ nav {
 }
 
 p.contact {
-    border-color: #FAEBD7;
+    border-color: #faebd7;
     border-style: solid;
 }
-
 
 .my-nav {
     position: absolute;
