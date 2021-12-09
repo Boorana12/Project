@@ -1,38 +1,20 @@
 <!-- เปิดการทำงาน session และดึงการเชื่อมต่อฐานข้อมูลมาจากไฟล์ที่ชื่อว่า db.php -->
-<?php 
-    session_start();
-    include_once "../Connection/db.php";
-    // ตรวจสอบว่ามี session admin รึเปล่า ถ้าไม่มีให้เด้งไปยังหน้า login เข้าใช้งานระบบ admin
-    if(!isset($_SESSION["admin"])) {
-        header('Location: ../Login/AdminPage.php');
-    }
+<?php
+session_start();
+include_once "../Connection/db.php";
+// ตรวจสอบว่ามี session admin รึเปล่า ถ้าไม่มีให้เด้งไปยังหน้า login เข้าใช้งานระบบ admin
+if (!isset($_SESSION["admin"])) {
+    header('Location: ../Login/AdminPage.php');
+}
 ?>
 
 <!doctype html>
 <html lang="en">
-
-<head>
-    <title>IT CMTC RESEARCH</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-<style>
-body {
-    font-family: 'Sarabun', sans-serif;
-}
-</style>
-
-<body>
-    <?php
+<?php
 require("../layout/navbar.php");
 ?>
 
+<body>
     <section id="add-researchs" class="pt-4">
         <div class="container">
             <div class="row">
@@ -45,16 +27,16 @@ require("../layout/navbar.php");
                 <div class="col-3"></div>
                 <div class="col-6">
                     <!-- ตรวจสอบค่า id ที่รับมาจากปุ่ม edit จากหน้า edit.php -->
-                    <?php if(!empty($_GET["id"])) { ?>
+                    <?php if (!empty($_GET["id"])) { ?>
                     <!-- ดึงข้อมูลทั้งหมดในตารางแล้วทำการเชื่อมต่อ -->
-                    <?php 
-                    $research_No = $_GET["id"];
-                    $readResearch = "SELECT * FROM researchs WHERE research_No = $research_No";
-                    $readResearchResult = mysqli_query($conn, $readResearch);
+                    <?php
+                        $research_No = $_GET["id"];
+                        $readResearch = "SELECT * FROM researchs WHERE research_No = $research_No";
+                        $readResearchResult = mysqli_query($conn, $readResearch);
 
-                    if (mysqli_num_rows($readResearchResult) > 0) {
-                        $row = mysqli_fetch_assoc($readResearchResult)
-                    ?>
+                        if (mysqli_num_rows($readResearchResult) > 0) {
+                            $row = mysqli_fetch_assoc($readResearchResult)
+                        ?>
                     <!-- แบบฟอร์มที่ส่งไปยังหน้า UpdateResearch.php ในโฟลเดอร์ process -->
                     <form method="POST" action="Process/UpdateResearch.php" enctype="multipart/form-data"
                         class="update-form">

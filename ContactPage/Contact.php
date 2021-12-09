@@ -14,6 +14,7 @@ require("../layout/navbar.php");
 
 ?>
 </style>
+
 <body>
     <div class="container">
         <!--------------- ส่วนเนื้อหา -------------->

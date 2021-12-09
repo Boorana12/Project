@@ -10,9 +10,9 @@ require("../layout/navbar.php");
 ?>
 
 <style>
-<?php include '../dist/css/card.css';
+    <?php include '../dist/css/card.css';
 
-?>
+    ?>
 </style>
 
 <body>
@@ -44,14 +44,12 @@ require("../layout/navbar.php");
     </div>
     <br>
     <!---------------------------------------------CARD------------------------------------------->
-    
     <section id="gallery">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
-                            alt="" class="card-img-top">
+                        <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Sunset</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum
@@ -63,8 +61,7 @@ require("../layout/navbar.php");
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1516214104703-d870798883c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
-                            alt="" class="card-img-top">
+                        <img src="https://images.unsplash.com/photo-1516214104703-d870798883c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Sunset</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum
@@ -76,8 +73,7 @@ require("../layout/navbar.php");
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
-                            alt="" class="card-img-top">
+                        <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Sunset</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum
@@ -90,18 +86,17 @@ require("../layout/navbar.php");
             </div>
         </div>
     </section>
-
     <!---------------------------------------------CARD------------------------------------------->
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 
 </body>

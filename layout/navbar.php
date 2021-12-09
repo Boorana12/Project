@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
-    <link rel="icon" href="../img/project.png">
+    <link rel="icon" href="../img/clipboard.png">
     <style>
     <?php include '../dist/css/navbar.css';
     ?>
     </style>
 </head>
 <!-- แถบ Navigation Bar ส่วนหัว -->
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar sticky-top navbar-expand-lg ">
     <img src="../img/task.png" width="30" height="30">
     <a class="navbar-brand" href="../HomePage/Homepage.php"><b>&nbsp; CMTC RESEARCH</b></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarText"
