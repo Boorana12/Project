@@ -176,13 +176,16 @@ require("../layout/navbar.php");
                                 </tbody>
                             </table>
                         </div>
-                        <a id="gridLeftTopic" href="./Search.php" class="btn btn-primary">ย้อนกลับ</a>
+                        <!--<a id="gridLeftTopic" href="./Search.php" class="btn btn-primary">ย้อนกลับ</a>-->
                     </div>
                 </section>
             </div>
         </div>
     </div>
-
+    <div class="" style="margin-top: 3%;"></div>
+    <?php
+    require("../layout/footer.php")
+    ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

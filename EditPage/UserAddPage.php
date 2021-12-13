@@ -2,11 +2,8 @@
 <?php
 session_start();
 include_once "../Connection/db.php";
-// ตรวจสอบว่ามี session admin รึเปล่า ถ้าไม่มีให้เด้งไปยังหน้า login เข้าใช้งานระบบ admin
-if (!isset($_SESSION["admin"])) {
-    header('Location: ../Login/AdminPage.php');
-}
-else if(!isset($_SESSION["username"])) {
+// ตรวจสอบว่ามี session username รึเปล่า ถ้าไม่มีให้เด้งไปยังหน้า login เข้าใช้งานระบบ user
+if(!isset($_SESSION["username"])) {
     header('Location: ../Login/LoginPage.php');
 }
 ?>

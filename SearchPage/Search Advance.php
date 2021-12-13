@@ -64,7 +64,10 @@ require("../layout/navbar.php");
                 </div>
         </div>
     </div>
-
+    <div class="" style="margin-top: 3%;"></div>
+    <?php
+    require("../layout/footer.php")
+    ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
