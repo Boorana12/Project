@@ -6,9 +6,6 @@ include_once "../Connection/db.php";
 if (!isset($_SESSION["admin"])) {
     header('Location: ../Login/AdminPage.php');
 }
-else if(!isset($_SESSION["username"])) {
-    header('Location: ../Login/LoginPage.php');
-}
 ?>
 
 <!doctype html>

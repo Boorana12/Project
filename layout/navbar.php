@@ -45,17 +45,13 @@
             <!-- ตรวจสอบว่ามี session ที่ชื่อว่า admin รึเปล่า ถ้ามีให้แสดงหน้าต่าง edit -->
             <?php if (isset($_SESSION["admin"])) { ?>
                 <li class="nav-item active">
-                    <a class="nav-link" href="../EditPage/Edit.php">Edit</a>
+                    <a class="nav-link" href="../EditPage/Edit.php">AdminEdit</a>
                 </li>
-            <?php } ?>
-            <!-- จบการทำงาน -->
-
-            <!-- ตรวจสอบว่ามี session ที่ชื่อว่า username รึเปล่า ถ้ามีให้แสดงหน้าต่าง edit -->
-            <?php if (isset($_SESSION["username"])) { ?>
+            <?php } elseif (!isset($_SESSION["username"]))  ?>
                 <li class="nav-item active">
                     <a class="nav-link" href="../EditPage/UserEdit.php">Edit</a>
                 </li>
-            <?php } ?>
+            <?php  ?>
             <!-- จบการทำงาน -->
         </ul>
         <!-- ตรวจสอบว่ามี session ที่ชื่อว่า username รึเปล่า ถ้าไม่มีให้แสดงคำสั่งลิงก์ไปยังหน้า login -->

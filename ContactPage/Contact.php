@@ -25,7 +25,7 @@ require("../layout/navbar.php");
                 </div>
 
                 <p>
-                    <font size="6"><i class="fas fa-home"></i>
+                    <font size="6"><i class="fas fa-home"></i></font>
                     <font size="4"> สาขาวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเชียงใหม่</font>
                 </p>
                 <p>

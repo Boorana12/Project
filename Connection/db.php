@@ -10,7 +10,7 @@ $password = "";
 $dbname = "research";
 
 // ทำการเชื่อมต่อฐานข้อมูล
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname ,);
 
 // ตรวจสอบการเชื่อมต่อ
 if (!$conn) {

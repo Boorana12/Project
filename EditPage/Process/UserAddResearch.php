@@ -166,14 +166,14 @@ if (!is_null($errors)) {
     }*/
     if (mysqli_query($conn, $createNewResearch)) {
         echo "เพิ่มข้อมูลสำเร็จ <br />";
-        header('location: ../Edit.php?s=1');
+        header('location: ../UserEdit.php?s=1');
     } else {
         echo "errors: " . $sql . "<br>" . mysqli_errors($conn);
     }
     // หากว่าการดำเนินงานข้างต้นมี error ให้ย้อนกลับยังหน้า addpage และแสดงหน้าต่าง sweetalert ว่าเพิ่มไม่สำเร็จ
 } else {
     echo "เพิ่มข้อมูลไม่สำเร็จ <br />";
-    header('location: ../AddPage.php?m=1');
+    header('location: ../UserAddPage.php?m=1');
 
     foreach ($errors as $value) {
         echo $value . "<br/>";

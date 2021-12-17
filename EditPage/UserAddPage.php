@@ -29,7 +29,7 @@ require("../layout/navbar.php");
                 </div>
                 <div class="col-6">
                     <!-- แบบฟอร์มที่ส่งไปยังหน้า AddResearch.php ในโฟลเดอร์ process -->
-                    <form method="POST" action="Process/AddResearch.php" enctype="multipart/form-data">
+                    <form method="POST" action="Process/UserAddResearch.php" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="research-name-thai">ชื่อภาษาไทย</label>
                             <input id="research-name-thai" name="research-name-thai" placeholder="" type="text"
