@@ -148,7 +148,7 @@ require("../layout/navbar.php");
                 </div>
         </div>
     </div>
-    <div class="" style="margin-top: 10%;"></div>
+    <div class="" style="margin-top: 20%;"></div>
     <?php
     require("../layout/footer.php")
     ?>

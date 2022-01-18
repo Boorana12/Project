@@ -166,6 +166,7 @@ if (!is_null($errors)) {
     }*/
     if (mysqli_query($conn, $createNewResearch)) {
         echo "เพิ่มข้อมูลสำเร็จ <br />";
+        
         header('location: ../UserEdit.php?s=1');
     } else {
         echo "errors: " . $sql . "<br>" . mysqli_errors($conn);

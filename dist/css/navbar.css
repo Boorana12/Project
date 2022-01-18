@@ -106,6 +106,29 @@ nav {
     background-color: whitesmoke;
 }
 
+nav .navbar-nav .nav-item a {
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+nav .navbar-nav .nav-item a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(17, 0, 0);
+    transition: 0.1s ease-in-out;
+}
+
+nav .navbar-nav .nav-item a:hover:after {
+    width: 100%;
+}
+
 .navbar-toggler {
     border: 0 !important;
 }
@@ -183,10 +206,53 @@ p.contact {
 }
 
 .carousel-item {
-    height: 100vh;
+    height: 94vh;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+@media only screen and (max-width: 425px) {
+    .carousel-item {
+        height: 40vh;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+/*@media only screen and (max-width: 768px) {
+    .carousel-item {
+        height: 50vh;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .carousel-item {
+        height: 90vh;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .carousel-item {
+        height: 92vh;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}*/

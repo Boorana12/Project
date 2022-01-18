@@ -25,7 +25,7 @@ require("../layout/navbar.php");
                 </div>
 
                 <p>
-                    <font size="6"><i class="fas fa-home"></i></font>
+                    <font size="5"><i class="fas fa-home"></i></font>
                     <font size="4"> สาขาวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเชียงใหม่</font>
                 </p>
                 <p>
@@ -38,7 +38,7 @@ require("../layout/navbar.php");
                 </p>
                 <p>
                     <font size="6"><i class="fab fa-facebook-square"></i></font>
-                    <font size="4"><a href="https://www.facebook.com/itcmtc">Facebook : https://www.facebook.com/itcmtc</a></font>
+                    <font size="4">Facebook : <a href="https://www.facebook.com/itcmtc">https://www.facebook.com/itcmtc</a></font>
                 </p>
                 <p>
                     <font size="6"><i class="fab fa-line"></i> </font>

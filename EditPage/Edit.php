@@ -27,7 +27,6 @@ require("../layout/navbar.php");
                         <a href="./AddPage.php" class="btn btn-primary">เพิ่มข้อมูล</a>
                     </div>
                 </div>
-
                 <!--<div>
                     <h3 id="gridRight">รายชื่อโครงการทั้งหมด</h3>
                 </div>

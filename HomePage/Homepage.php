@@ -11,11 +11,11 @@ require("../layout/navbar.php");
 
 <style>
     <?php include '../dist/css/card.css';
-
     ?>
 </style>
 
 <body>
+    <!---------------------------------------------Carousel------------------------------------------->
     <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -23,7 +23,7 @@ require("../layout/navbar.php");
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" style="background-image: url('../img/itcmtc/1581923390_4662-org.jpg')">
+            <div class="carousel-item active" style="background-image: url('../img/itcmtc/HomePage.png')">
 
             </div>
             <div class="carousel-item " style="background-image: url('../img/itcmtc/1581923390_9169-org.jpg')">
@@ -51,7 +51,7 @@ require("../layout/navbar.php");
                     <div class="card">
                         <img src="../img/itcmtc/1581923390_4662-org.jpg" alt="" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Sunset</h5>
+                            <h5 class="card-title">Project</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum
                                 similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi
                                 dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
@@ -63,7 +63,7 @@ require("../layout/navbar.php");
                     <div class="card">
                         <img src="../img/itcmtc/1581923390_4662-org.jpg" alt="" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Sunset</h5>
+                            <h5 class="card-title">Project</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum
                                 similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi
                                 dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
@@ -75,7 +75,7 @@ require("../layout/navbar.php");
                     <div class="card">
                         <img src="../img/itcmtc/1581923390_4662-org.jpg" alt="" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Sunset</h5>
+                            <h5 class="card-title">Project</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum
                                 similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi
                                 dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
