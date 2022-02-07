@@ -49,37 +49,31 @@ require("../layout/navbar.php");
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <div class="card">
-                        <img src="../img/itcmtc/1581923390_4662-org.jpg" alt="" class="card-img-top">
+                        <img src="../img/searching.png" alt="" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Project</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum
-                                similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi
-                                dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                            <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                            <h5 class="card-title">Search</h5>
+                            <p class="card-text">หน้าค้นหาโครงการ</p>
+                            <a href="../SearchPage/Search.php" class="btn btn-outline-success btn-sm">ไปที่หน้านี้</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="card">
-                        <img src="../img/itcmtc/1581923390_4662-org.jpg" alt="" class="card-img-top">
+                        <img src="../img/flowchart.png" alt="" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Project</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum
-                                similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi
-                                dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                            <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                            <h5 class="card-title">Projects</h5>
+                            <p class="card-text">หน้าโครงการทั้งหมด</p>
+                            <a href="../ProjectPage/Project.php" class="btn btn-outline-success btn-sm">ไปที่หน้านี้</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="card">
-                        <img src="../img/itcmtc/1581923390_4662-org.jpg" alt="" class="card-img-top">
+                        <img src="../img/contact.png" alt="" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Project</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum
-                                similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi
-                                dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                            <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                            <h5 class="card-title">Contact</h5>
+                            <p class="card-text">ข้อมูลติดต่อ</p>
+                            <a href="../ContactPage/Contact.php" class="btn btn-outline-success btn-sm">ไปที่หน้านี้</a>
                         </div>
                     </div>
                 </div>

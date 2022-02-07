@@ -30,11 +30,13 @@
             <li class="nav-item active">
                 <a class="nav-link" href="../HomePage/Homepage.php">Home</a>
             </li>
+            <!--
             <li class="nav-item active">
                 <a class="nav-link" href="../SearchPage/Search.php">Search</a>
             </li>
+            -->
             <li class="nav-item active">
-                <a class="nav-link" href="../SearchPage/Search Advance.php">Search Advance</a>
+                <a class="nav-link" href="../SearchPage/Search Advance.php">Search</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="../ProjectPage/Project.php">Project</a>
