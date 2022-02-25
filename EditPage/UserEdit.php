@@ -35,7 +35,7 @@ require("../layout/navbar.php");
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-10">
-                            <h3>รายชื่อโครงการทั้งหมด</h3>
+                            <h3><b>รายชื่อโครงการทั้งหมด</b></h3>
                         </div>
                         <div class="col d-flex flex-row-reverse">
                             <a href="./UserAddPage.php" class="btn btn-primary">เพิ่มข้อมูล</a>
@@ -52,15 +52,15 @@ require("../layout/navbar.php");
                             <!-- หัวตาราง  -->
                             <thead>
                                 <tr style="background-color:#DCDCDC " align="center">
-                                    <td width="4%">หมายเลข</td>
-                                    <td width="20%">ชื่อโครงการภาษาไทย</td>
-                                    <td width="20%">ชื่อโครงการภาษาอังกฤษ</td>
-                                    <td width="10%">ประเภท</td>
-                                    <td width="19%">ชื่อหัวหน้าโครงการ</td>
-                                    <td width="10%">ปีการศึกษา</td>
-                                    <td width="10%">ระดับชั้น</td>
-                                    <td width="9%">แก้ไข</td>
-                                    <td width="9%">ลบ</td>
+                                    <td width="4%"><b>หมายเลข</b></td>
+                                    <td width="20%"><b>ชื่อโครงการภาษาไทย</b></td>
+                                    <td width="20%"><b>ชื่อโครงการภาษาอังกฤษ</b></td>
+                                    <td width="10%"><b>ประเภท</b></td>
+                                    <td width="19%"><b>ชื่อหัวหน้าโครงการ</b></td>
+                                    <td width="10%"><b>ปีการศึกษา</b></td>
+                                    <td width="10%"><b>ระดับชั้น</b></td>
+                                    <td width="9%"><b>แก้ไข</b></td>
+                                    <td width="9%"><b>ลบ</b></td>
                                 </tr>
                             </thead>
                             <tbody>

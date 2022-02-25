@@ -24,13 +24,13 @@ require("../layout/navbar.php");
                         <!-- หัวตาราง  -->
                         <thead>
                             <tr style="background-color:#D3D3D3 " align="center">
-                                <td width="4%">ลำดับ</td>
-                                <td width="20%">ชื่อโครงการภาษาไทย</td>
-                                <td width="20%">ชื่อโครงการภาษาอังกฤษ</td>
-                                <td width="9%">ประเภท</td>
-                                <td width="19%">ชื่อหัวหน้าโครงการ</td>
-                                <td width="9%">ปีการศึกษา</td>
-                                <td width="10%">ระดับชั้น</td>
+                                <td width="4%"><b>ลำดับ</b></td>
+                                <td width="20%"><b>ชื่อโครงการภาษาไทย</b></td>
+                                <td width="20%"><b>ชื่อโครงการภาษาอังกฤษ</b></td>
+                                <td width="9%"><b>ประเภท</b></td>
+                                <td width="19%"><b>ชื่อหัวหน้าโครงการ</b></td>
+                                <td width="9%"><b>ปีการศึกษา</b></td>
+                                <td width="10%"><b>ระดับชั้น</b></td>
                             </tr>
                         </thead>
                         <tbody>

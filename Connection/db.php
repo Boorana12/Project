@@ -5,15 +5,19 @@
 
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "research";
+$username = "admin_mspj";
+$password = "5MOBPN@2022";
+$dbname = "db_mspj";
 
-// ทำการเชื่อมต่อฐานข้อมูล
-$conn = mysqli_connect($servername, $username, $password, $dbname ,);
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// ตรวจสอบการเชื่อมต่อ
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+// Change character set to utf8
+$conn->set_charset("utf8");
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
+
 ?>
