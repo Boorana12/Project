@@ -116,11 +116,11 @@ require("../layout/navbar.php");
                                     <label for="research_text">บทคัดย่อ</label><br>
                                     <textarea id="form-control" name="research-text" rows="10" cols="75"><?php echo $row["research_Text"] ?></textarea>
                                 </div>
-                                <div class="form-group">
+                                <!--<div class="form-group">
                                     <label for="research-image">ไฟล์ Word (ไม่จำเป็นต้องใส่ก็ได้) </label>
                                     <input type="file" class="form-control-file" name="research_fileword" aria-describedby="fileHelpId" accept=".doc, .docx">
                                     <small id="fileHelpId" class="form-text text-muted">จำกัดไฟล์ .doc .docx เท่านั้น</small>
-                                </div>
+                                </div>-->
                                 <div class="form-group">
                                     <label for="research-image">ไฟล์ PDF (ไม่จำเป็นต้องใส่ก็ได้) </label>
                                     <input type="file" class="form-control-file" name="research_filepdf" aria-describedby="fileHelpId" accept=".pdf">

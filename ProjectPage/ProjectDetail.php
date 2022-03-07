@@ -185,7 +185,7 @@ include_once "../Connection/db.php";
                             <!-- ถ้าพบ session ที่มีชื่อว่า username -->
                             <div style="display:flex">
                                 <?php if (isset($_SESSION["username"])) { ?>
-                                <?php if (isset($row['research_FileWord'])) { ?>
+                                <?php /* if (isset($row['research_FileWord'])) { ?>
                                 <?php echo "<img src=\"../img/logoword.png\" width=\"50\" height=\"45\"><button type=\"button\" class=\"button1\"><a href=\"../file/download_file_word.php?file=" . $row['research_FileWord'] . "\" >
                                         ดาวน์โหลดบทคัดย่อ WORD
                                         </a></button>&nbsp; &nbsp;"; ?>
@@ -193,7 +193,7 @@ include_once "../Connection/db.php";
                                         echo "<img src=\"../img/logoword.png\" width=\"50\" height=\"45\"><button type=\"button\" class=\"button1\"><a style=\"color:blue;\">
                                         ผลงานวิจัยนี้ไม่มีบทคัดย่อ WORD
                                         </a></button>&nbsp; &nbsp;";
-                                    } ?>
+                                    } */?>
                                 <?php if (isset($row['research_FilePDF'])) { ?>
                                 <?php echo "<img src=\"../img/logopdf.png\" width=\"50\" height=\"45\"><button type=\"button\" class=\"button2\"><a href=\"../file/download_file_pdf.php?file=" . $row['research_FilePDF'] . "\" >
                                         ดาวน์โหลดบทคัดย่อ PDF
